@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.assignment4.Notifications">
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:onClick="cancel"
+        android:text="@string/cancel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:onClick="save"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nstv1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ns1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel" />
+
+    <Spinner
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save" />
+
+    <TextView
+        android:id="@+id/nstv2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ns2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nstv1" />
+
+    <Spinner
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+
+    <TextView
+        android:id="@+id/nstv3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ns3"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nstv2" />
+
+    <Spinner
+        android:id="@+id/time3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
+
+    <TextView
+        android:id="@+id/nstv4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ns4"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nstv3" />
+
+    <CheckBox
+        android:id="@+id/echeck"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Email Summary"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nstv4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/by"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/echeck"
+        app:layout_constraintTop_toTopOf="@+id/echeck" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nstv4" />
+
+    <EditText
+        android:id="@+id/emailNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+
+</android.support.constraint.ConstraintLayout>

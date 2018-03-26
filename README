@@ -1,0 +1,27 @@
+akrugla1
+kyim6
+
+For design purposes, we moved save/cancel notifications to the bottom of the
+screen as is makes more sense for these buttons to appear below a change that
+has been made as opposed to above.
+
+For conversion from ml to ounces, because we display as integers, when
+units are switched and switched back, the rounding changes the numbers a little
+but
+
+Watched https://www.youtube.com/watch?v=bNpWGI_hGGg&t=96s
+to learn how to add tabs that change between fragments on an activity
+using viewpager and fragment adapter
+
+Logic behind daily reset:
+In settings, the Daily Reset resets at a certain hour the user’s water intake for the day.
+All our logic for this is inside the checkResetIntake().
+To test this, instead of waiting for whatever hour you set it to,
+you can instead change the hour variable of the currentDate variable to what the hypothetically time would be
+of a change and/or change the resetAt variable’s resetPref variable to be something else as well.
+Logically, what this method does is turn the current time into an int and generates an int
+for at what time that day the water tracker should reset and compares the two.
+If the time it should reset at is less than the current time then it will rest
+UNLESS, the last time the user logged it, it was already reset.
+We save the last logged in time as an int in shared preferences
+and reset it every onCreate and onResume

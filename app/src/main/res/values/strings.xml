@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">WaterTracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="edit_amnt">Enter amount</string>
+    <string name="add12">12</string>
+    <string name="add8">8</string>
+    <string name="add17">17</string>
+    <string name="enter_amount">Enter\namount</string>
+    <string name="oz">oz</string>
+    <string name="water_glass">water glass</string>
+    <string name="water_message">You drank 0/64 ounces\nof water today!</string>
+    <string name="logo">Quench Water Tracker</string>
+    <string name="waterIntake">waterIntake</string>
+    <string name="goal">goal</string>
+    <string name="title_activity_history">History</string>
+    <string name="cancel">cancel</string>
+    <string name="daily_reset">Daily Reset:</string>
+    <string name="goal2">Goal:</string>
+    <string name="units">Units:</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="ounces">ounces</string>
+    <string name="milliliters">milliliters</string>
+    <string name="apply">Apply</string>
+    <string name="choose">Choose</string>
+    <string name="settings">Settings</string>
+    <string name="enter_hour">enter hour</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="notifications">Notifications:</string>
+    <string name="save">Save</string>
+    <string name="colon">:</string>
+    <string name="by"> by </string>
+    <string name="add">Add</string>
+    <string name="enter_email">enter email address</string>
+    <string name="detail_list_ncoming_soon">Detail List\nComing Soon...</string>
+
+    <string name="ns1">Notify me every </string>
+    <string name="ns2">starting at </string>
+    <string name="ns3">if I have not yet met </string>
+    <string name="ns4">of my prorated goal</string>
+
+    <string name="tab_text_1">DETAILS</string>
+    <string name="tab_text_2">TOTALS</string>
+
+    <string name="sport">17oz/500ml</string>
+    <string name="mug">8oz/250ml</string>
+    <string name="bottle">12oz/350ml</string>
+
+    <string-array name="freq">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+    </string-array>
+
+    <string-array name="time2">
+        <item>3am</item>
+        <item>6am</item>
+        <item>9am</item>
+        <item>noon</item>
+        <item>3pm</item>
+        <item>6pm</item>
+        <item>9pm</item>
+        <item>midnight</item>
+    </string-array>
+
+    <string-array name="percent">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+</resources>
